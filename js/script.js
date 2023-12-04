@@ -32,5 +32,10 @@ let team=[
     }  
 ]
 
-
-console.log(team);
+// creao ul ciclo che mi legga tutti gli oggetti 
+for (let i=0; i<team.length; i++){
+    // creo un ciclo che per ogni oggetto mi legga i paramentri 
+    for (let key in team[i]) {
+        console.log(team[i][key]);      
+      } 
+}
