@@ -36,9 +36,10 @@ let info= document.getElementById("info");
 // creao ul ciclo che mi legga tutti gli oggetti 
 for (let i=0; i<team.length; i++){
     let div = document.createElement("div")
-    let persona
+    
     // creo un ciclo che per ogni oggetto mi legga i paramentri 
     for (let key in team[i]) {
+        let persona
         persona =`<div> ${team[i][key]} </div>`;
         div.innerHTML+=persona       
       }
