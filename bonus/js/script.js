@@ -31,16 +31,24 @@ let team=[
         foto:"barbara-ramos-graphic-designer.jpg"
     }  
 ]
+//collegamento al dom
 let info= document.getElementById("info");
 
 // creao ul ciclo che mi legga tutti gli oggetti 
 for (let i=0; i<team.length; i++){
+
+    //creazione del div contenitore 
     let div = document.createElement("div")
-    let persona
-    // creo un ciclo che per ogni oggetto mi legga i paramentri 
-    for (let key in team[i]) {
-        persona =`<div> ${team[i][key]} </div>`;
-        div.innerHTML+=persona       
-      }
-      info.appendChild(div)
+    div.classList.add("m-5");
+    div.classList.add("text-center");
+
+    let image=`<img src="./img/${team[i].foto}" class="size_img"></img>`
+    let name=`<h2> ${team[i].nome} </h2>`;
+    let work=`<h4> ${team[i].ruolo} </h4>`;
+
+    //inserimento della div creato nel dom 
+    div.innerHTML=image+name+ work;
+    info.appendChild(div)
 }
+
+
