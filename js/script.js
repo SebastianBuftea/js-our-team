@@ -1,32 +1,36 @@
+// Milestone 0 creo l'Array contenente gli oggetti
 let team=[
     {
         nome:"Wayne Bamett",
-        ruolo:"",
-        foto:""
+        ruolo:"Founder & CEO",
+        foto:"wayne-barnett-founder-ceo.jpg"
     },
     {
         nome:"Angela Caroll",
-        ruolo:"",
-        foto:""
+        ruolo:"Chief Editor",
+        foto:"angela-caroll-chief-editor.jpg"
     },
     {
         nome:"Walter Gordon",
-        ruolo:"",
-        foto:""
+        ruolo:"Office MaNAGER",
+        foto:"walter-gordon-office-manager.jpg"
     },
     {
         nome:"Angela Lopex",
-        ruolo:"",
-        foto:""
+        ruolo:"Social Media Manager",
+        foto:"angela-lopez-social-media-manager.jpg"
     },
     {
         nome:"Scott Estrada",
-        ruolo:"",
-        foto:""
+        ruolo:"Developer",
+        foto:"scott-estrada-developer.jpg"
     },
     {
         nome:"Barbara Ramos",
-        ruolo:"",
-        foto:""
+        ruolo:"Graphic Designer",
+        foto:"barbara-ramos-graphic-designer.jpg"
     }  
 ]
+
+
+console.log(team);
